@@ -14,7 +14,7 @@ def plot():
             ax1.plot(p, func1(p, w),linewidth=3)
             ax2.plot(p, func2(p, w),linewidth=3)
         else:
-            ax1.plot(p,func1(p,w))
+            ax1.plot(p,func1(p,w))#rrrrrrrrrrrrr
             ax2.plot(p,func2(p,w))
     plt.show()
 
