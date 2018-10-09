@@ -18,6 +18,11 @@ def plot():
             ax2.plot(p,func2(p,w))
     plt.show()
 
+def testpyplt(w):
+    p = np.arange(0,1,0.2)
+    plt.plot(p,1 - (1 - p)**w - p*w)
+    plt.show()
+
 def func1(p,w):
     return 1 - (1 - p)**w - p*w
 
@@ -26,4 +31,4 @@ def func2(p,w):
 
 
 if __name__=='__main__':
-    plot()
+    testpyplt(3)
